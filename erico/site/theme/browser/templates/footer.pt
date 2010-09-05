@@ -1,0 +1,50 @@
+<div id="portal-footer" metal:define-macro="portal_footer" i18n:domain="plone" tal:define="portal_url context/portal_url;">
+
+    <div id="footer-plone"><a href="http://www.simplesconsultoria.com.br">
+        <img alt="Plone" src="logo-footer.png"  tal:attributes="src string:${portal_url}/logo-footer.png"></a>
+<p>
+    <span i18n:translate="description_copyright" tal:omit-tag="">
+    The
+    <span i18n:name="plonecms" tal:omit-tag="">
+        <a href="http://plone.org" i18n:translate="label_plone_cms">Plone<sup>&reg;</sup> Open Source Content Management System</a>
+    </span>
+    is
+    <acronym title="Copyright" i18n:name="copyright" i18n:attributes="title title_copyright;">&copy;</acronym>
+    2000-2010
+    by the
+    <span i18n:name="plonefoundation" tal:omit-tag="">
+        <a href="http://plone.org/foundation" i18n:translate="label_plone_foundation">Plone Foundation</a></span>
+    et al.
+    </span>
+</p>
+
+<p>
+    <span i18n:translate="description_trademark" tal:omit-tag="">
+    Plone<sup>&reg;</sup> and the Plone logo are registered trademarks of the
+        <span i18n:name="plonefoundation" tal:omit-tag="">
+            <a href="http://plone.org/foundation" i18n:translate="label_plone_foundation">Plone Foundation</a></span>.
+    </span>
+
+    <span i18n:translate="description_license" tal:omit-tag="">
+    Distributed under the
+        <span i18n:name="license" tal:omit-tag="">
+            <a href="http://creativecommons.org/licenses/GPL/2.0/" i18n:translate="label_gnu_gpl_licence">GNU GPL license</a></span>.
+    </span>
+</p>
+    </div>
+
+<div class="visualClear"/>
+
+ <div id="footer-simples"><a href="http://www.simplesconsultoria.com.br">
+        <img alt="Simples Consultoria" src="logo-footer-simples.png"  tal:attributes="src string:${portal_url}/logo-footer-simples.png" /></a>
+<p>
+   This theme was developed for World Plone Day 2010 by Simples Consultoria's team.
+</p>
+
+<p>
+   You can freely use it in your own projects. Please, keep the credits whenever possible.
+</p>
+
+</div>
+
+</div>

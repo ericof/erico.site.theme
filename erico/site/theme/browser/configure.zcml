@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="erico.site.theme">
+
+    <interface
+        interface=".interfaces.IThemeSpecific"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="erico_site_theme"
+        />
+    <!-- Viewlets registration -->
+    
+    <browser:viewlet
+             name="erico.site.theme.logo"
+             manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+             class=".viewlets.MyLogo"
+             layer=".interfaces.IThemeSpecific"
+             permission="zope2.View"
+     />
+    <browser:viewlet
+             name="erico.site.theme.footer"
+             manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+             template="templates/footer.pt"
+             layer=".interfaces.IThemeSpecific"
+             permission="zope2.View"
+     />
+
+    <browser:resourceDirectory
+        name="erico.site.theme.images"
+        directory="images"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+    <browser:resourceDirectory
+        name="erico.site.theme.stylesheets"
+        directory="stylesheets"
+        layer=".interfaces.IThemeSpecific"
+        />
+
+</configure>

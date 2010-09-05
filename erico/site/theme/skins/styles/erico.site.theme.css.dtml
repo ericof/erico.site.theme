@@ -1,0 +1,292 @@
+/* <dtml-with base_properties> */
+
+body {
+	font-size: 100%;
+	font-family: Arial, FreeSans, sans-serif; 
+	color: #CCC; 
+	background:#002B3E top center no-repeat;
+        border-top:5px solid #FF7E00;
+}
+#visual-portal-wrapper {
+  width:60em;
+  margin:auto;	
+  background:url(background.png) top center no-repeat;} 
+
+#portal-top {	background: url(fundotranslucido.png); }
+
+#portal-top div.width-full {width:auto; left: 0; float: none; margin-left: 0;}
+
+/*** Portal Logo ***/
+
+#portal-logo {margin: 0;margin-left: 10px;}
+
+#titulosite {
+font-family:Arial;
+font-size:48px;
+font-weight:bold;
+left:212px;
+position:absolute;
+top:65px;
+width:450px;
+opacity:0.3;
+filter:alpha(opacity=10);
+}
+
+
+/*** Personal Tools ***/
+
+#portal-personaltools {float:none;text-align:right;}
+
+#portal-personaltools, 
+#portal-personaltools dd {
+	background: #ff7e00; 
+}
+#portal-personaltools, 
+#portal-personaltools dd,
+#portal-personaltools a {
+	color: #fff;
+}
+
+#portal-personaltools li {margin-right:10px !Important; margin-left:10px !Important;}
+
+#portal-personaltools dd a:hover {
+	background: #f47900;
+}
+
+
+/*** Global Navigation ***/
+
+#portal-globalnav  {
+	background: #2C5F75;
+        float:right;
+        width:760px;
+        padding-bottom:6px;
+        padding-top:6px;
+}
+#portal-globalnav li a {	
+	background: #25566B url(global-divisor.png) right no-repeat;
+	color: #fff;
+        padding: 4px 12px;
+        border-right:0;
+        text-align: center;
+        padding-right:19px;
+        min-width: 0;
+ }
+
+#portal-globalnav li {margin-left:-4px;}
+
+#portal-globalnav li.last a {	
+	background: #25566B url(global-divisor-final.png) right no-repeat;
+ }
+
+#portal-globalnav li.first {
+background: #25566B url(global-divisor-first.png) left no-repeat;
+padding:4px 0 4px 7px;}
+
+#portal-globalnav .selected a {
+	background: #25566B url(global-divisor.png) right no-repeat;
+	font-weight:bold;
+}
+
+
+
+/*** Searchbox ***/
+
+#portal-searchbox {
+margin-right:40px;
+margin-top:5px;
+}
+
+#portal-searchbox #searchGadget {
+border: none;
+background: url(input-search.png) left top no-repeat;
+line-height:auto !Important;
+width: 116px;
+height:16px;
+font-size:10px;
+padding: 5px 0 3px 7px;
+}
+
+#portal-searchbox .searchButton {
+background: url(button-search.png) left top no-repeat !important;
+border: none !Important;
+line-height:auto !Important;
+margin-left: -6px;
+font-size:10px;
+width: 56px;
+height:26px;
+padding:4px;
+text-align: center;
+}
+
+#portal-searchbox .searchButton {
+padding:3px 0 3px 0;
+}
+
+
+#portal-searchbox .searchSection {
+color:#628594;
+font-size:83%;
+margin-left:60px;
+margin-top:6px;}
+
+#portal-breadcrumbs {
+position:absolute;
+width:745px;
+top:137px;
+border-top:1px solid #184456;
+padding:5px 0 5px 200px;
+border-bottom:1px solid #184456;}
+
+#portal-breadcrumbs,
+#portal-breadcrumbs a {color:#fff;font-size:11px;}
+
+#breadcrumbs-you-are-here, #breadcrumbs-home, #breadcrumbs-current, #breadcrumbs-1 {display:inline;}
+
+/*** Columns ***/
+
+#portal-columns {
+	background:#002B3E;
+	width:100%;
+        background:url(fundotranslucido.png);
+        padding: 15px 0; margin: 0 0;
+}
+
+.template-manage-portlets #content {
+margin:auto;
+width:375px;
+}
+
+/*** Contents ***/
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;color:#FFFFFF;}
+
+
+
+#content div.documentByLine,
+#content .documentDescription,
+#content #description,
+#content .discreet,
+#content, #content a:link,
+#content a.link-plain,
+#sidebar .discreet {color:#CCCCCC;}
+
+
+#content .documentDescription, #content #description {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.documentByLine {
+    padding: 15px 0 15px 0;
+    border-top: 0.1em solid #75AD0A;
+    border-bottom: 0.1em solid #75AD0A;
+}
+#content-core .item{
+    padding: 0px 0 15px 0;
+    border-bottom: 0.1em solid #75AD0A;
+}
+#content a:link, #content  a:visited {color: #75AD0A; border-bottom: 0.1em solid #75AD0A;}
+
+#content h2 a:link, #content  h2 a:visited {color: #FFFFFF; border-bottom: 0.1em solid #FFFFFF;}
+
+#content a:visited, dl.portlet a:visited {border:0px !important; color:#75AD0A;border-bottom: 0.1em solid #75AD0A;}
+
+.portalMessage {margin-top:30px !Important;}
+
+#contentActionMenus dl.actionMenu a, #contentActionMenus dl.actionMenu.activated dd {background: #fff; color: #000;}
+
+#contentActionMenus {display: block; float: none; clear: both;}
+
+#content {
+background:url("fundotranslucido.png") transparent;
+padding:5px;}
+
+
+.contentActions {
+background-color:#75AD0A;
+-moz-border-radius-topleft:0.5em;
+-moz-border-radius-topright:0.5em;}
+
+#content-views{
+-moz-border-radius-topleft:0.5em;
+-moz-border-radius-topright:0.5em;}
+
+.documentActions {display:none;}
+
+
+div.managePortletsLink, a.managePortletsFallback {background:transparent;}
+
+/*********** Viewlets **********/
+
+.portlet {
+border-bottom:0pt none;
+margin-left:2px;
+margin-bottom:20px;}
+
+.portletItem {border-left:0;border-right:0;padding:10px 0 !Important;}
+
+dl.portlet dd a,
+dl.portlet dd a:visited {text-decoration:none !Important; color:#75AD0A !Important;}
+
+.portlet dd {margin-left:0px;background:transparent;}
+
+.portletHeader, .portletFooter, .lastItem {
+    position: relative !important;
+    border:none;
+    background-color:transparent;
+}
+
+.portletHeader {
+   border-bottom:5px solid #FF7E00;
+   padding:0 0 10px 0 !Important;
+   background:transparent!Important; 
+   height: 21px;
+   font-weight:bold;
+   color:#FFFFFF;}
+
+.portletHeader a,
+.managedPortlet .portletHeader a {color:#FFFFFF !Important;text-decoration:none !Important;font-weight:bold;}
+
+.portletFooter {border:0px !important;border-top:0!Important; padding:0 !Important;}
+
+/* Disqus */
+
+.#dsq-content {
+   background-color:#25566B;
+   font-family: Arial, FreeSans, sans-serif; 
+   color: #CCC;
+}
+
+#dsq-content h3 {
+    color: #FFFFFF;
+}
+
+#disqus_thread{
+    color: #CCC;
+}
+
+#disqus_thread a {
+    color: #75AD0A;
+}
+
+.discusion {
+    padding:0 0 20px 0 !Important;
+}
+
+
+/*** Footer ***/
+
+#portal-footer {text-align:left;padding:30px;margin-top:3px;background:#002B3E url(fundotranslucido.png);}
+#portal-footer img {
+float:left;
+margin:0 40px 20px 0;
+border-right:1px solid #fff;
+padding-right:44px;
+
+}
+#portal-footer, #portal-footer a {color: #fff;}
+#portal-footer {margin: 2px -10px 0 -12px;}
+
+
+/* </dtml-with> */

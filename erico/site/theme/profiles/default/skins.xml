@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="erico_site_theme">
+ <object name="erico_site_theme_images"
+    meta_type="Filesystem Directory View"
+    directory="erico.site.theme:skins/images"/>
+ <object name="erico_site_theme_templates"
+    meta_type="Filesystem Directory View"
+    directory="erico.site.theme:skins/templates"/>
+ <object name="erico_site_theme_styles"
+    meta_type="Filesystem Directory View"
+    directory="erico.site.theme:skins/styles"/>
+ <object name="erico_site_theme_javascripts"
+    meta_type="Filesystem Directory View"
+    directory="erico.site.theme:skins/javascripts"/>
+
+ <skin-path name="erico_site_theme" 
+            based-on="Plone Default">
+  <layer name="erico_site_theme_images"
+     insert-after="custom"/>
+  <layer name="erico_site_theme_templates"
+     insert-after="erico_site_theme_images"/>
+  <layer name="erico_site_theme_styles"
+     insert-after="erico_site_theme_templates"/>
+  <layer name="erico_site_theme_javascripts"
+     insert-after="erico_site_theme_styles"/>
+ </skin-path>
+
+</object>
